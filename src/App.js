@@ -18,8 +18,6 @@ const App = () => {
     if (screen === 2) return <Result />;
   };
 
-  console.log(context);
-
   return <div className="container">{handleComponent()}</div>;
 };
 
