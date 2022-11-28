@@ -16,7 +16,7 @@ const Confirm = () => {
     <div>
       <h3>Your question is:</h3>
       <div className="viewer">{context.state.question}</div>
-      <div>
+      <div className="animate__animated animate__bounceIn animate__delay-1s">
         <hr />
         <button className="btn" onClick={goNext}>
           Decide it

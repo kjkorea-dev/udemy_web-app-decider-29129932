@@ -31,7 +31,9 @@ const Initial = () => {
         className="form-control"
       />
       {showNext && (
-        <button className="btn" onClick={handleSubmit}>
+        <button
+          className="btn animate__animated animate__fadeIn"
+          onClick={handleSubmit}>
           Next
         </button>
       )}
