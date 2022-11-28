@@ -1,10 +1,14 @@
 import { useContext, useEffect } from "react";
+import { toast } from "react-toastify";
 import { MyContext } from "../context";
 
 const Result = () => {
   const context = useContext(MyContext);
   useEffect(() => {
     context.result();
+    toast.success("There is your answer", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
